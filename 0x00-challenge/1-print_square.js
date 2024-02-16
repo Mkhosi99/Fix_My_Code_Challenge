@@ -14,6 +14,11 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
+/*
+   This line parses the string provided as the second command-line argument (process.argv[2]) 
+   as an integer using base 10 (decimal), which is the default behavior of parseInt. 
+   This means it expects the string to represent a number in decimal format
+*/   
 size = parseInt(process.argv[2], 10)
 
 for (let i = 0; i < size; i++) {
