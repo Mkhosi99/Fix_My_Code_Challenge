@@ -43,7 +43,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	else
 	{
-		// bypassing the current head node.
+		/* bypassing the current head node */
 		(*head)->prev->next = (*head)->next;
 		free(*head);
 		if ((*head)->next)
